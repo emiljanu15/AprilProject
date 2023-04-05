@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="1003.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aprilproject.Controllers.MainController">
+   <children>
+      <TabPane fx:id="scenaGlowna" prefHeight="551.0" prefWidth="1003.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="logonPanel" text="Panel logowania">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="70.0" layoutY="40.0" prefHeight="46.0" prefWidth="91.0" text="Login:">
+                           <font>
+                              <Font size="31.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="98.0" prefHeight="46.0" prefWidth="91.0" text="Hasło:">
+                           <font>
+                              <Font size="31.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="loginInput" layoutX="226.0" layoutY="50.0" prefHeight="26.0" prefWidth="278.0" />
+                        <PasswordField fx:id="passwordInput" layoutX="226.0" layoutY="109.0" prefHeight="25.0" prefWidth="277.0" />
+                        <Button fx:id="loginButton" layoutX="691.0" layoutY="246.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Zaloguj" />
+                        <Button fx:id="listUserButton" layoutX="109.0" layoutY="246.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Lista użytkowników" />
+                        <Button fx:id="exitButton" layoutX="691.0" layoutY="414.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="Wyjdź z aplikacji" />
+                        <Button fx:id="newUserButton" layoutX="365.0" layoutY="246.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Nowy Użytkownik" />
+                        <Button fx:id="progressionProgramButton" layoutX="148.0" layoutY="414.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="165.0" text="Program Progresja" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="homePanel" disable="true" text="Home Panel">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="listDepositButton" layoutX="51.0" layoutY="36.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Lista wpłat" />
+                        <Button fx:id="addButtonDeposit" layoutX="52.0" layoutY="86.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Dodaj wpłatę" />
+                        <Label layoutX="663.0" layoutY="14.0" prefHeight="17.0" prefWidth="102.0" text="Zalogowany jako:" />
+                        <TextField fx:id="logonUserInput" editable="false" layoutX="802.0" layoutY="10.0" />
+                        <Label layoutX="663.0" layoutY="53.0" prefHeight="17.0" prefWidth="94.0" text="Saldo konta:" />
+                        <TextField fx:id="sumAccountDisplay" editable="false" layoutX="802.0" layoutY="49.0" />
+                        <Button fx:id="addWithdrawButton" layoutX="52.0" layoutY="136.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Dodaj wypłatę" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
